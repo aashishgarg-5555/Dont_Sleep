@@ -37,10 +37,10 @@ while(True):
     left_eye = leye.detectMultiScale(gray)
     right_eye =  reye.detectMultiScale(gray)
 
-    cv2.rectangle(frame, (0,height-50) , (200,height) , (0,0,0) , thickness=cv2.FILLED )
+    # cv2.rectangle(frame, (0,height-50) , (200,height) , (0,0,0) , thickness=cv2.FILLED )
 
-    for (x,y,w,h) in faces:
-        cv2.rectangle(frame, (x,y) , (x+w,y+h) , (100,100,100) , 1 )
+    # for (x,y,w,h) in faces:
+    #     cv2.rectangle(frame, (x,y) , (x+w,y+h) , (100,100,100) , 1 )
 
     for (x,y,w,h) in right_eye:
         r_eye=frame[y:y+h,x:x+w]
